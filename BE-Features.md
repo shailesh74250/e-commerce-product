@@ -1,0 +1,53 @@
+- Search products with Categories or without categories
+- The product upload on the S3 Bucket and image should be in WebP format.
+- Product Schema 
+- Seller Schema: The seller is going to upload the product and its details
+- Buy Schema: Going to buy the product
+- Secure PII Data: Data privacy regulations (like GDPR, CCPA, HIPAA) require companies to protect PII.
+  - Leakage or misuse of PII can lead to identity theft, fraud, or legal penalties.
+  - PII (Personally Identifiable Information)
+  - Full name, Social Security Number, Passport number, Email address
+  - Date of birth, Gender, IP address, ZIP code, Login credentials
+  - Phone, Address,  IP address, Biometric data, ID numbers
+- Add to Cart product
+- Check out the Product with a  specific payment gateway
+- Manage notifications like - sending order details via email, SMS, Inproduct notify
+- Encryption, Decryption payload data, UUI data, Hash, Password stored as hash
+- Handle logs in production
+- Paginate the product list using store producers 
+- Product CRUD operations with Data Validation
+- Cart CRUD operations with Data Validations
+  - Sync cart across sessions
+  - Store cart in Redis
+  - Cart validation logic (e.g., check product stock)
+- Order & Checkout
+  - Create an order from the cart
+  - Shipping address handling
+  -  Inventory adjustment logic
+  - Order lifecycle (placed > shipped > delivered > returned)
+  -  Invoice entity & order logs
+- Payments & Invoicing
+  -  Payment gateway integration (Stripe, Razorpay)
+  - Handle payment status (success/failure)
+  - Webhook listener for payment gateway
+  - Generate order invoices (PDF)
+  - Secure payment session handling
+- Notifications & Events
+  -  Notification microservice (Email, SMS, push)
+  -  Notify us of order updates (placed/shipped/etc.)
+  - Kafka or RabbitMQ setup for event-driven architecture
+  - Retry and fallback for failed notifications
+
+- Admin Panel & Reports
+  - Admin APIs (total orders, daily revenue, product stats)
+  -  RBAC for admin roles (admin, staff, support)
+  - Admin access to review/return management
+  - Sales & analytics APIs
+  -  API logs and audit trail
+- Sprint 9: QA, Security, Optimization
+  - Write unit & integration tests (Jest/Supertest)
+  -  Add rate limiting, CORS, Helmet.js
+  -  DB indexing & query optimization
+  -  DB indexing & query optimization
+  - Set up E2E tests (Postman/Cypress)
+  - Code linting, formatting, and coverage reports
